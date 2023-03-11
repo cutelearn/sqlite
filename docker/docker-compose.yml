@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  dev:
+    image: ylin94/python_dev:3.11
+    container_name: dev
+    tty: true
+    stdin_open: true
+    volumes:
+      - ..:/app
+  sqlite3:
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../db/:/root/db/
