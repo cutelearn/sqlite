@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sqlite-tutor"
+version = "0.1.0"
+description = ""
+authors = ["yang-lin94 <casongg@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sqlite_tutor"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
